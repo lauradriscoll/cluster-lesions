@@ -112,16 +112,16 @@
 % \x = 2
 
 % \begin{tikzpicture}
-\foreach \x in {1,...,10}{%
+\foreach \x in {1,...,27}{%
     \begin{figure}[t!]
     \centering
     \textbf{LESION \x}\par\medskip
     \begin{tikzpicture}
     \node[anchor=west] (perf) at (0,0) {\includegraphics[trim=0mm 50mm 0mm 0mm, clip, width=0.4\linewidth]{figs/lesion \x/perf_change.pdf}};	
     \node[anchor=north] (hdiff) at ([shift={(2,2)}]perf.east) {\includegraphics[trim=0mm 0mm 0mm 0mm, clip,width=0.6\linewidth]{figs/lesion \x/h_diff.pdf}};
-    \node[anchor=north] (single) at ([shift={(0,0)}]perf.south) {\includegraphics[trim=10mm 0mm 10mm 0mm, clip, width=0.49\linewidth]{figs/lesion \x/single_unit_activations.pdf}};
-    \node[anchor=north] (pop) at ([shift={(1.5,0)}]hdiff.south) {\includegraphics[trim=40mm 0mm 40mm 0mm, clip,width=0.35\linewidth]{figs/lesion \x/population_compare.pdf}};
-    \node[anchor=north] (pccontribution) at ([shift={(2,0)}]single.south) {\includegraphics[trim=0mm 0mm 0mm 0mm, clip,width=0.65\linewidth]{figs/lesion \x/pc_contribution.pdf}};
+    % \node[anchor=north] (single) at ([shift={(0,0)}]perf.south) {\includegraphics[trim=0mm 0mm 0mm 0mm, clip, width=0.49\linewidth]{figs/lesion \x/single_unit_activations.pdf}};
+    % \node[anchor=north] (pop) at ([shift={(1.5,0)}]hdiff.south) {\includegraphics[trim=40mm 0mm 40mm 0mm, clip,width=0.35\linewidth]{figs/lesion \x/population_compare.pdf}};
+    % \node[anchor=north] (pccontribution) at ([shift={(2,0)}]single.south) {\includegraphics[trim=0mm 0mm 0mm 0mm, clip,width=0.65\linewidth]{figs/lesion \x/pc_contribution.pdf}};
     \end{tikzpicture}
     \end{figure}
     \pagebreak
